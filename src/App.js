@@ -1,24 +1,66 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { useEffect, useState } from 'react';
+import ReactDom from 'react-dom';
+
 
 function App() {
+  const [country, setCountry] = useState(null);
+  const [search, setSearch] = useState("Pakistan");
+  useEffect(() => {
+    const fetchApi = async () => {
+      const url = `https://corona.lmao.ninja/v2/countries/${search}`
+      const response = await fetch(url);
+      const resJson = await response.json();
+      setCountry(resJson)
+    }
+    fetchApi()
+  }, [search])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+
+      <div className="box">
+
+
+        <div className="inputdata">
+          <input
+            className="input"
+            type="search"
+            value={search}
+            onChange={(event) => {
+              setSearch(event.target.value)
+            }}
+          />
+        </div>
+        {!country ? (
+          <p className="" error>No Data Found</p>
+        ) : (
+            <div className="info">
+              <br />
+              <h1 className="hy">
+                {search}
+              </h1>
+              <br />
+              <h3>
+                Total Cases : {country.cases}
+              </h3>
+              <br />
+              <h3>Deaths :  {country.deaths}</h3>
+              <br />
+              <h3>Recovered : {country.recovered}</h3>
+              <br />
+              <h3>Critical Condition : {country.critical}</h3>
+              <br />
+              <h3>Cases Reported Today : {country.todayCases}</h3>
+              <br />
+
+            </div>
+          )}
+
+      </div>
+
+    </>
+
+
   );
 }
 
