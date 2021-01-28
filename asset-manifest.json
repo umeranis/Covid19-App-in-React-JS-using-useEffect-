@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Covid19-App-in-React-JS-using-useEffect-/static/css/main.3d7a7d61.chunk.css",
+    "main.js": "/Covid19-App-in-React-JS-using-useEffect-/static/js/main.dfcf4e05.chunk.js",
+    "main.js.map": "/Covid19-App-in-React-JS-using-useEffect-/static/js/main.dfcf4e05.chunk.js.map",
+    "runtime-main.js": "/Covid19-App-in-React-JS-using-useEffect-/static/js/runtime-main.20db851a.js",
+    "runtime-main.js.map": "/Covid19-App-in-React-JS-using-useEffect-/static/js/runtime-main.20db851a.js.map",
+    "static/js/2.ac77793d.chunk.js": "/Covid19-App-in-React-JS-using-useEffect-/static/js/2.ac77793d.chunk.js",
+    "static/js/2.ac77793d.chunk.js.map": "/Covid19-App-in-React-JS-using-useEffect-/static/js/2.ac77793d.chunk.js.map",
+    "static/js/3.48bc4b81.chunk.js": "/Covid19-App-in-React-JS-using-useEffect-/static/js/3.48bc4b81.chunk.js",
+    "static/js/3.48bc4b81.chunk.js.map": "/Covid19-App-in-React-JS-using-useEffect-/static/js/3.48bc4b81.chunk.js.map",
+    "index.html": "/Covid19-App-in-React-JS-using-useEffect-/index.html",
+    "static/css/main.3d7a7d61.chunk.css.map": "/Covid19-App-in-React-JS-using-useEffect-/static/css/main.3d7a7d61.chunk.css.map",
+    "static/js/2.ac77793d.chunk.js.LICENSE.txt": "/Covid19-App-in-React-JS-using-useEffect-/static/js/2.ac77793d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.20db851a.js",
+    "static/js/2.ac77793d.chunk.js",
+    "static/css/main.3d7a7d61.chunk.css",
+    "static/js/main.dfcf4e05.chunk.js"
+  ]
+}
